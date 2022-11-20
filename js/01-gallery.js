@@ -21,7 +21,7 @@ galleryBlock.addEventListener("click", (event) => {
   event.preventDefault();
   if (event.target.nodeName !== "IMG") {
     return;
-  }
+  };
   const instance = basicLightbox.create(`
     <img src="${event.target.getAttribute("data-source")}">
 `);
@@ -32,7 +32,7 @@ galleryBlock.addEventListener("click", (event) => {
     galleryBlock.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
         instance.close();
-      }
+      };
     });
-  }
+  };
 });
